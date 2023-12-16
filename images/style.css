@@ -1,0 +1,129 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: #1b1818;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-family: sans-serif;
+  background-color: rgb(248, 241, 230);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: inside;
+}
+
+.header {
+  background-color: rgb(240, 216, 186);
+  margin-bottom: 30px;
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.header__dev {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.4cm;
+}
+
+.phone {
+  color: black;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.container {
+  width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 30px 0 15px;
+  color: green;
+}
+
+.my-info {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: end;
+}
+
+.my-info__img {
+  width: 250px;
+  object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 10px 5px 20px rgb(99, 98, 98);
+}
+
+.my-info__title {
+  font-size: 50px;
+  line-height: 1.2;
+  color: green;
+  margin-left: 20px;
+}
+
+.about__text {
+  display: block;
+  width: 800px;
+}
+
+.about__text + .about__text {
+  padding-top: 7px;
+}
+
+.dev__list li {
+    padding-bottom: 5px;
+}
+
+.footer {
+  margin-top: 40px;
+  display: flex;
+  background-color: rgb(213, 242, 176);
+}
+
+.footer__inner {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-link {
+  flex-basis: 120px;
+  margin-right: 15px;
+  color: black;
+}
+
+.footer__adress-text {
+  flex-basis: 300px;
+}
+
+.footer__social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social-item {
+  padding: 0 5px;
+}

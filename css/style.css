@@ -1,0 +1,218 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #4d4747;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  background-color: rgb(68, 45, 5);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: inside;
+}
+
+.header {
+  background-color: rgb(240, 216, 186);
+  margin-bottom: 30px;
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.header__dev {
+  font-size: 26px;
+  font-weight: normal;
+ 
+}
+
+.phone {
+  color: black;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.container {
+  width: 900px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: 'Bitter', serif;
+  font-weight: medium;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 10px;
+  color: green;
+ 
+}
+
+span {
+  display: inline-block;
+  padding: 5px;
+  background-color: rgb(227, 218, 229);
+  padding-bottom: 5px;
+  border-radius: 7px;
+}
+
+span::before {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  right: 0;
+  margin-right: 5px;
+  
+}
+
+.about span::before {
+  content:url(../images/about.svg);
+}
+
+.my-info {
+  position: relative;
+  display: flex;
+  margin-bottom: 50px;
+  align-items: end;
+  border-bottom: 1px solid gray;
+  padding-bottom: 50px;
+
+}
+
+.my-info__img {
+  width: 250px;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: all .4s;
+}
+
+.my-info__img:hover {
+  transform: scale(1.02);
+  box-shadow: 10px 5px 20px rgb(99, 98, 98);
+}
+
+.my-info__title {
+  font-family: 'Bitter', serif;
+  font-weight: medium;
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: .2pc;
+  color: green;
+  margin-left: 20px;
+}
+
+.about__text {
+  display: block;
+  width: 800px;
+}
+
+.about,.educate__text, .skills, .hobby, .dev {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #dbeff3;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+}
+
+.educate__text span::before {
+  content:url(../images/educate.svg);
+}
+
+.about__text + .about__text {
+  padding-top: 7px;
+}
+
+.educate__text,
+.hobby {
+  background-color: #b0f3c4;
+}
+
+.hobby span::before {
+  content:url(../images/hobby.svg);
+}
+
+.dev {
+  margin-bottom: 0;
+}
+
+.dev span::before {
+  content:url(../images/code.svg);
+}
+
+.skills span::before {
+  content:url(../images/work.svg);
+}
+
+.dev__list li {
+    padding-bottom: 5px;
+}
+
+.btn {
+    background: transparent;
+    width: 300px;
+    height: 35px; 
+    border: 1px solid rgb(59, 110, 33, .7);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1.5pt;
+    transition: all .4s;
+}
+
+.btn:hover {
+    background-color: rgb(17, 93, 30);
+    color: rgb(215, 190, 160);
+    transform: scale(1.02);
+    box-shadow: 10px 5px 20px rgb(99, 98, 98);
+}
+
+.footer {
+  margin-top: 40px;
+  display: flex;
+  background-color: rgb(213, 242, 176);
+}
+
+.footer__inner {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-link {
+  flex-basis: 120px;
+  margin-right: 15px;
+  color: black;
+}
+
+.footer__adress-text {
+  flex-basis: 300px;
+}
+
+.footer__social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social-item {
+  padding: 0 5px;
+}
